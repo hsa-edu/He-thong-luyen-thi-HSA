@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ Thống Học Tập HSA - Thầy Hòa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+
+    <header class="bg-gradient-to-r from-blue-700 via-indigo-800 to-slate-900 text-white shadow-lg border-b border-indigo-900/30">
+        <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center space-x-3">
+                <div class="bg-amber-400 text-slate-900 w-12 h-12 rounded-full flex items-center justify-center font-black text-xl shadow-md">
+                    TH
+                </div>
+                <div>
+                    <h1 class="text-2xl font-black tracking-tight text-amber-400">THẦY HÒA</h1>
+                    <p class="text-[11px] text-blue-200 tracking-wider font-semibold uppercase">Giáo viên luyện thi HSA</p>
+                </div>
+            </div>
+            
+            <div class="text-center sm:text-right">
+                <h2 class="text-lg font-extrabold tracking-wide text-white">TRUNG TÂM GIA SƯ GIỎI NGHỆ AN</h2>
+                <p class="text-xs text-slate-300 mt-0.5"><i class="fa-solid fa-location-dot text-red-400 mr-1"></i>Thành phố Vinh, Nghệ An</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8 flex-grow w-full">
+        
+        <div class="mb-8 bg-blue-50 border border-blue-200 rounded-2xl p-4 flex items-center justify-between flex-wrap gap-4">
+            <div class="flex items-center space-x-3">
+                <span class="text-blue-600 text-xl"><i class="fa-solid fa-circle-info"></i></span>
+                <p class="text-xs sm:text-sm font-medium text-blue-800">Học sinh click vào các buổi học từ 1 đến 6 để xem và làm bài tập theo lộ trình phân hóa.</p>
+            </div>
+            <span class="bg-blue-600 text-white text-[11px] font-bold px-3 py-1 rounded-full">Khóa học đang diễn ra</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:border-blue-400 transition duration-300 flex flex-col justify-between">
+                <div class="p-6">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-lg">• Buổi 1</span>
+                        <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded"><i class="fa-solid fa-calendar-days mr-1"></i>26-05-2026</span>
+                    </div>
+                    <h3 class="font-bold text-slate-950 mt-3 text-base">Nouns & Articles (Danh từ và Mạo từ)</h3>
+                    <p class="text-xs text-slate-500 mt-2 leading-relaxed">Hệ thống hóa danh từ và các quy tắc sử dụng mạo từ quan trọng. Vận dụng chính xác trong các dạng bài ngữ pháp và HSA cơ bản.</p>
+                </div>
+                <div class="p-4 bg-slate-50 border-t border-slate-100">
+                    <button onclick="showLessonDetail(1, 'Nouns & Articles (Danh từ và Mạo từ)')" class="w-full text-center text-xs bg-blue-600 hover:bg-blue-700 text-white py-2.5 rounded-xl font-bold shadow-sm transition">Xem lộ trình bài tập buổi 1</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:border-blue-400 transition duration-300 flex flex-col justify-between">
+                <div class="p-6">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-lg">• Buổi 2</span>
+                        <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded"><i class="fa-solid fa-calendar-days mr-1"></i>02-06-2026</span>
+                    </div>
+                    <h3 class="font-bold text-slate-950 mt-3 text-base">Adjectives & Adverbs (Tính từ và Trạng từ)</h3>
+                    <p class="text-xs text-slate-500 mt-2 leading-relaxed">Làm chủ tính từ, trạng từ và vai trò của chúng trong câu. Nâng cao khả năng nhận diện từ loại và lựa chọn đáp án chính xác.</p>
+                </div>
+                <div class="p-4 bg-slate-50 border-t border-slate-100">
+                    <button onclick="showLessonDetail(2, 'Adjectives & Adverbs (Tính từ và Trạng từ)')" class="w-full text-center text-xs bg-blue-600 hover:bg-blue-700 text-white py-2.5 rounded-xl font-bold shadow-sm transition">Xem lộ trình bài tập buổi 2</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:border-blue-400 transition duration-300 flex flex-col justify-between">
+                <div class="p-6">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-lg">• Buổi 3</span>
+                        <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded"><i class="fa-solid fa-calendar-days mr-1"></i>09-06-2026</span>
+                    </div>
+                    <h3 class="font-bold text-slate-950 mt-3 text-base">Present Simple & Present Continuous (Thì Hiện tại đơn và Hiện tại tiếp diễn)</h3>
+                    <p class="text-xs text-slate-500 mt-2 leading-relaxed">Nắm chắc công thức, cách dùng và dấu hiệu nhận biết nhóm thì Hiện tại. Tránh các lỗi sai phổ biến và vận dụng linh hoạt trong bài tập HSA.</p>
+                </div>
+                <div class="p-4 bg-slate-50 border-t border-slate-100">
+                    <button onclick="showLessonDetail(3, 'Present Simple & Present Continuous (Thì Hiện tại đơn và Hiện tại tiếp diễn)')" class="w-full text-center text-xs bg-blue-600 hover:bg-blue-700 text-white py-2.5 rounded-xl font-bold shadow-sm transition">Xem lộ trình bài tập buổi 3</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:border-blue-400 transition duration-300 flex flex-col justify-between">
+                <div class="p-6">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-lg">• Buổi 4</span>
+                        <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded"><i class="fa-solid fa-calendar-days mr-1"></i>16-06-2026</span>
+                    </div>
+                    <h3 class="font-bold text-slate-950 mt-3 text-base">Past Simple & Present Perfect (Thì Quá khứ đơn & Hiện tại hoàn thành)</h3>
+                    <p class="text-xs text-slate-500 mt-2 leading-relaxed">Phân biệt rõ Quá khứ đơn và Hiện tại hoàn thành. Xử lý chính xác các trạng từ thời gian thường gặp trong đề thi.</p>
+                </div>
+                <div class="p-4 bg-slate-50 border-t border-slate-100">
+                    <button onclick="showLessonDetail(4, 'Past Simple & Present Perfect (Thì Quá khứ đơn & Hiện tại hoàn thành)')" class="w-full text-center text-xs bg-blue-600 hover:bg-blue-700 text-white py-2.5 rounded-xl font-bold shadow-sm transition">Xem lộ trình bài tập buổi 4</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:border-blue-400 transition duration-300 flex flex-col justify-between">
+                <div class="p-6">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-lg">• Buổi 5</span>
+                        <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded"><i class="fa-solid fa-calendar-days mr-1"></i>23-06-2026</span>
+                    </div>
+                    <h3 class="font-bold text-slate-950 mt-3 text-base">Past Continuous & Present Perfect Continuous (Thì Quá khứ tiếp diễn & Hiện tại hoàn thành tiếp diễn)</h3>
+                    <p class="text-xs text-slate-500 mt-2 leading-relaxed">Hiểu sâu các thì tiếp diễn trong quá khứ và hiện tại. Thành thạo các dạng bài phối hợp thì và hành động kéo dài.</p>
+                </div>
+                <div class="p-4 bg-slate-50 border-t border-slate-100">
+                    <button onclick="showLessonDetail(5, 'Past Continuous & Present Perfect Continuous (Thì Quá khứ tiếp diễn & Hiện tại hoàn thành tiếp diễn)')" class="w-full text-center text-xs bg-blue-600 hover:bg-blue-700 text-white py-2.5 rounded-xl font-bold shadow-sm transition">Xem lộ trình bài tập buổi 5</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:border-blue-400 transition duration-300 flex flex-col justify-between">
+                <div class="p-6">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-lg">• Buổi 6</span>
+                        <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded"><i class="fa-solid fa-calendar-days mr-1"></i>30-06-2026</span>
+                    </div>
+                    <h3 class="font-bold text-slate-950 mt-3 text-base">Past Perfect & Future Tenses (Thì Quá khứ hoàn thành & Thì Tương lai cơ bản)</h3>
+                    <p class="text-xs text-slate-500 mt-2 leading-relaxed">Làm chủ mốc thời gian và thứ tự hành động trong quá khứ. Hệ thống hóa các thì tương lai cơ bản và cách phân biệt.</p>
+                </div>
+                <div class="p-4 bg-slate-50 border-t border-slate-100">
+                    <button onclick="showLessonDetail(6, 'Past Perfect & Future Tenses (Thì Quá khứ hoàn thành & Thì Tương lai cơ bản)')" class="w-full text-center text-xs bg-blue-600 hover:bg-blue-700 text-white py-2.5 rounded-xl font-bold shadow-sm transition">Xem lộ trình bài tập buổi 6</button>
+                </div>
+            </div>
+
+            <div class="bg-slate-100 rounded-2xl border border-slate-200 overflow-hidden flex flex-col justify-between opacity-60 select-none">
+                <div class="p-6">
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-bold text-slate-500 bg-slate-200 px-2.5 py-1 rounded-lg">• Buổi 7</span>
+                        <span class="text-xs font-medium text-slate-400"><i class="fa-solid fa-lock mr-1"></i>Khóa</span>
+                    </div>
+                    <h3 class="font-bold text-slate-400 mt-3 text-base">Sequence of Tenses (Sự phối hợp thì)</h3>
+                </div>
+                <div class="p-4 bg-slate-100 border-t border-slate-200">
+                    <button class="w-full text-center text-xs bg-slate-200 text-slate-400 py-2.5 rounded-xl font-bold cursor-not-allowed">Chưa mở khóa</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="dynamic-resource-box" class="hidden bg-white rounded-3xl border-2 border-blue-500 p-6 sm:p-8 shadow-xl mb-12 scroll-mt-6">
+            <div class="flex justify-between items-start border-b border-slate-100 pb-4 mb-6">
+                <div>
+                    <span class="bg-blue-600 text-white text-[10px] font-black px-2 py-0.5 rounded uppercase tracking-wider">Hệ thống bài tập phân hóa theo lộ trình</span>
+                    <h2 id="detail-box-title" class="text-xl font-extrabold text-slate-900 mt-1">Buổi Học</h2>
+                </div>
+                <button onclick="closeResourceBox()" class="text-xs font-bold text-slate-400 hover:text-slate-600 px-2.5 py-1 rounded border border-slate-200">Đóng vùng học tập</button>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                
+                <div class="bg-emerald-50/40 p-5 rounded-2xl border border-emerald-100/70">
+                    <div class="flex items-center space-x-2 text-emerald-800 font-bold mb-5 border-b border-emerald-100 pb-3">
+                        <span class="bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide"><i class="fa-solid fa-graduation-cap mr-1"></i>Nhóm Nền Tảng</span>
+                    </div>
+                    
+                    <div class="space-y-4 relative">
+                        <div class="flex items-center justify-between bg-white p-3.5 rounded-xl border border-slate-100 shadow-sm">
+                            <div class="flex items-center space-x-3">
+                                <span class="bg-emerald-100 text-emerald-800 w-7 h-7 rounded-full flex items-center justify-center font-bold text-xs">1</span>
+                                <span class="text-xs sm:text-sm font-semibold text-slate-700"><i class="fa-solid fa-file-pdf text-red-500 mr-2"></i>Sổ tay trọng tâm</span>
+                            </div>
+                            <button onclick="toggleNotebook()" class="text-[11px] bg-slate-800 text-white px-3 py-1.5 rounded-lg font-bold hover:bg-slate-900 transition flex items-center"><i class="fa-solid fa-book-open mr-1"></i> Xem lý thuyết</button>
+                        </div>
+                        <div class="flex justify-center text-emerald-500 my-1"><i class="fa-solid fa-arrow-down-long"></i></div>
+                        
+                        <div class="flex items-center justify-between bg-white p-3.5 rounded-xl border border-slate-100 shadow-sm">
+                            <div class="flex items-center space-x-3">
+                                <span class="bg-blue-100 text-blue-800 w-7 h-7 rounded-full flex items-center justify-center font-bold text-xs">2</span>
+                                <span class="text-xs sm:text-sm font-semibold text-slate-700"><i class="fa-solid fa-brain text-purple-500 mr-2"></i>Flashcard ghi nhớ nhanh</span>
+                            </div>
+                            <a href="#" class="text-[11px] bg-blue-600 text-white px-3 py-1.5 rounded-lg font-bold hover:bg-blue-700 transition flex items-center"><i class="fa-solid fa-bolt mr-1"></i> Luyện tập</a>
+                        </div>
+                        <div class="flex justify-center text-emerald-500 my-1"><i class="fa-solid fa-arrow-down-long"></i></div>
+
+                        <div class="flex items-center justify-between bg-white p-3.5 rounded-xl border border-slate-100 shadow-sm">
+                            <div class="flex items-center space-x-3">
+                                <span class="bg-blue-100 text-blue-800 w-7 h-7 rounded-full flex items-center justify-center font-bold text-xs">3</span>
+                                <span class="text-xs sm:text-sm font-semibold text-slate-700"><i class="fa-solid fa-pen-to-square text-blue-500 mr-2"></i>Luyện tập nền tảng</span>
+                            </div>
+                            <a href="#" class="text-[11px] bg-emerald-600 text-white px-3 py-1.5 rounded-lg font-bold hover:bg-emerald-700 transition flex items-center"><i class="fa-solid fa-keyboard mr-1"></i> Làm bài</a>
+                        </div>
+                        <div class="flex justify-center text-emerald-500 my-1"><i class="fa-solid fa-arrow-down-long"></i></div>
+
+                        <div class="flex items-center justify-between bg-white p-3.5 rounded-xl border border-slate-100 shadow-sm">
+                            <div class="flex items-center space-x-3">
+                                <span class="bg-amber-100 text-amber-800 w-7 h-7 rounded-full flex items-center justify-center font-bold text-xs">4</span>
+                                <span class="text-xs sm:text-sm font-semibold text-slate-700"><i class="fa-solid fa-bullseye text-amber-500 mr-2"></i>Đánh giá nhanh</span>
+                            </div>
+                            <a href="#" class="text-[11px] bg-indigo-600 text-white px-3 py-1.5 rounded-lg font-bold hover:bg-indigo-700 transition flex items-center"><i class="fa-solid fa-circle-check mr-1"></i> Vào thi</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-indigo-50/40 p-5 rounded-2xl border border-indigo-100/70">
+                    <div class="flex items-center space-x-2 text-indigo-800 font-bold mb-5 border-b border-indigo-100 pb-3">
+                        <span class="bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide"><i class="fa-solid fa-bolt mr-1"></i>Nhóm Nâng Cao</span>
+                    </div>
+                    
+                    <div class="space-y-4 relative">
+                        <div class="flex items-center justify-between bg-white p-3.5 rounded-xl border border-slate-100 shadow-sm">
+                            <div class="flex items-center space-x-3">
+                                <span class="bg-indigo-100 text-indigo-800 w-7 h-7 rounded-full flex items-center justify-center font-bold text-xs">1</span>
+                                <span class="text-xs sm:text-sm font-semibold text-slate-700"><i class="fa-solid fa-book text-indigo-500 mr-2"></i>Luyện tập nâng cao</span>
+                            </div>
+                            <a href="#" class="text-[11px] bg-indigo-600 text-white px-3 py-1.5 rounded-lg font-bold hover:bg-indigo-700 transition flex items-center"><i class="fa-solid fa-fire mr-1"></i> Thử thách</a>
+                        </div>
+                        <div class="flex justify-center text-indigo-500 my-1"><i class="fa-solid fa-arrow-down-long"></i></div>
+                        
+                        <div class="flex items-center justify-between bg-white p-3.5 rounded-xl border border-slate-100 shadow-sm">
+                            <div class="flex items-center space-x-3">
+                                <span class="bg-indigo-100 text-indigo-800 w-7 h-7 rounded-full flex items-center justify-center font-bold text-xs">2</span>
+                                <span class="text-xs sm:text-sm font-semibold text-slate-700"><i class="fa-solid fa-book-open text-teal-500 mr-2"></i>Vận dụng thực tế</span>
+                            </div>
+                            <a href="#" class="text-[11px] bg-blue-600 text-white px-3 py-1.5 rounded-lg font-bold hover:bg-blue-700 transition flex items-center"><i class="fa-solid fa-pen-clip mr-1"></i> Thực hành</a>
+                        </div>
+                        <div class="flex justify-center text-indigo-500 my-1"><i class="fa-solid fa-arrow-down-long"></i></div>
+
+                        <div class="flex items-center justify-between bg-white p-3.5 rounded-xl border border-slate-100 shadow-sm">
+                            <div class="flex items-center space-x-3">
+                                <span class="bg-indigo-100 text-indigo-800 w-7 h-7 rounded-full flex items-center justify-center font-bold text-xs">3</span>
+                                <span class="text-xs sm:text-sm font-semibold text-slate-700"><i class="fa-solid fa-award text-amber-600 mr-2"></i>Dạng bài HSA</span>
+                            </div>
+                            <a href="#" class="text-[11px] bg-amber-600 text-white px-3 py-1.5 rounded-lg font-bold hover:bg-amber-700 transition flex items-center"><i class="fa-solid fa-graduation-cap mr-1"></i> Chiến đề</a>
+                        </div>
+                        <div class="flex justify-center text-indigo-500 my-1"><i class="fa-solid fa-arrow-down-long"></i></div>
+
+                        <div class="flex items-center justify-between bg-gradient-to-r from-amber-50 to-orange-50 p-3.5 rounded-xl border border-amber-200 shadow-sm">
+                            <div class="flex items-center space-x-3">
+                                <span class="bg-amber-400 text-slate-900 w-7 h-7 rounded-full flex items-center justify-center font-extrabold text-xs">🏆</span>
+                                <span class="text-xs sm:text-sm font-bold text-amber-900">Bứt phá điểm số</span>
+                            </div>
+                            <a href="#" class="text-[11px] bg-gradient-to-r from-amber-500 to-orange-600 text-white px-3 py-1.5 rounded-lg font-black hover:from-amber-600 hover:to-orange-700 transition shadow-sm flex items-center"><i class="fa-solid fa-star mr-1"></i> Đạt điểm 10</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- VÙNG SỔ TAY - NƠI CẬP NHẬT CHỈNH SỬA -->
+            <div id="notebook-content-area" class="hidden border-t border-slate-200 pt-6 mt-6">
+                <div class="bg-slate-900 text-white p-6 rounded-2xl shadow-inner">
+                    
+                    <!-- Tiêu đề Sổ tay -->
+                    <div class="flex justify-between items-center mb-6 border-b border-slate-700 pb-3">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-amber-400 text-lg"><i class="fa-solid fa-file-invoice"></i></span>
+                            <h3 class="text-lg font-black tracking-wide text-amber-400 uppercase">📄 SỔ TAY TRỌNG TÂM</h3>
+                        </div>
+                        <span class="text-[11px] font-bold bg-slate-800 text-slate-300 px-2.5 py-1 rounded">Chuyên đề: DANH TỪ & MẠO TỪ</span>
+                    </div>
+
+                    <!-- Mục tiêu -->
+                    <div class="mb-6 bg-blue-950/40 p-4 rounded-xl border border-blue-900/60 text-xs sm:text-sm text-slate-300">
+                        <strong class="text-blue-400">🎯 Mục tiêu học tập:</strong> Nắm vững toàn bộ kiến thức cốt lõi về Danh từ (Nouns) và Mạo từ (Articles) thường xuyên xuất hiện.
+                    </div>
+
+                    <!-- Phần 1 -->
+                    <div class="mb-8">
+                        <h3 class="text-sm sm:text-base font-bold text-amber-400 border-l-4 border-amber-400 pl-2 mb-3 uppercase tracking-wide">PHẦN 1. DANH TỪ (NOUNS)</h3>
+                        
+                        <h4 class="text-xs sm:text-sm font-semibold text-slate-200 mb-2">1. Khái niệm cốt lõi</h4>
+                        <p class="text-xs text-slate-300 mb-3">Danh từ (Noun) là từ dùng để gọi tên các đối tượng cụ thể hoặc trừu tượng:</p>
+                        
+                        <div class="overflow-x-auto bg-slate-800/50 rounded-xl border border-slate-700/60 mb-3">
+                            <table class="w-full text-left text-xs text-slate-300">
+                                <thead class="bg-slate-800 text-white text-[11px] uppercase tracking-wider">
+                                    <tr class="border-b border-slate-700"><th class="p-3 w-1/3">Phân loại</th><th class="p-3">Ví dụ thực tế</th></tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-700/40">
+                                    <tr><td class="p-3 font-semibold text-slate-200">Người</td><td class="p-3 text-emerald-400">teacher, student, doctor</td></tr>
+                                    <tr><td class="p-3 font-semibold text-slate-200">Địa điểm</td><td class="p-3 text-emerald-400">school, city, village</td></tr>
+                                    <tr><td class="p-3 font-semibold text-slate-200">Sự vật</td><td class="p-3 text-emerald-400">book, table, computer</td></tr>
+                                    <tr><td class="p-3 font-semibold text-slate-200">Con vật</td><td class="p-3 text-emerald-400">dog, cat, tiger</td></tr>
+                                    <tr><td class="p-3 font-semibold text-slate-200">Ý tưởng / Khái niệm</td><td class="p-3 text-purple-400">happiness, love, freedom</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="bg-slate-800/40 p-3 rounded-xl border border-slate-700/50 text-[11px] sm:text-xs text-slate-400 italic space-y-1">
+                            <p class="font-bold text-slate-300 not-italic mb-1">Ví dụ minh họa ngữ cảnh câu:</p>
+                            <p>• My brother is a <span class="text-emerald-400 underline">doctor</span>.</p>
+                            <p>• The <span class="text-emerald-400 underline">school</span> is near my house.</p>
+                            <p>• <span class="text-purple-400 underline">Happiness</span> is important in life.</p>
+                        </div>
+
+                        <h4 class="text-xs sm:text-sm font-semibold text-slate-200 mt-5 mb-2">2. Vị trí ngữ pháp của danh từ</h4>
+                        <ul class="text-xs text-slate-300 space-y-2 pl-4 list-disc">
+                            <li><strong class="text-slate-100">Sau tính từ (Adj + N):</strong> a beautiful <span class="text-emerald-400">flower</span>, a useful <span class="text-emerald-400">book</span></li>
+                            <li><strong class="text-slate-100">Sau tính từ sở hữu (my/your/his/her... + N):</strong> my <span class="text-emerald-400">teacher</span>, her <span class="text-emerald-400">car</span></li>
+                            <li><strong class="text-slate-100">Sau mạo từ (a/an/the + N):</strong> a <span class="text-emerald-400">student</span>, an <span class="text-emerald-400">apple</span></li>
+                            <li><strong class="text-slate-100">Sau lượng từ:</strong> many <span class="text-emerald-400">books</span>, much <span class="text-emerald-400">money</span>, several <span class="text-emerald-400">students</span></li>
+                            <li><strong class="text-slate-100">Sau giới từ:</strong> interested in <span class="text-emerald-400">music</span>, good at <span class="text-emerald-400">English</span></li>
+                            <li><strong class="text-slate-100">Làm chủ ngữ trong câu:</strong> <span class="text-emerald-400">English</span> is my favorite subject.</li>
+                            <li><strong class="text-slate-100">Làm tân ngữ trong câu:</strong> I bought a new <span class="text-emerald-400">computer</span>.</li>
+                        </ul>
+
+                        <h4 class="text-xs sm:text-sm font-semibold text-slate-200 mt-5 mb-2">3. Hậu tố nhận biết dạng từ (Word Form)</h4>
+                        <div class="overflow-x-auto bg-slate-800/50 rounded-xl border border-slate-700/60">
+                            <table class="w-full text-left text-xs text-slate-300">
+                                <thead class="bg-slate-800 text-white text-[11px] uppercase">
+                                    <tr class="border-b border-slate-700"><th class="p-2.5 w-1/3">Hậu tố đặc trưng</th><th>Từ vựng mẫu tiêu biểu</th></tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-700/40">
+                                    <tr><td class="p-2.5 font-bold text-slate-200">-tion / -sion</td><td class="p-2.5 text-slate-300">education, pollution, decision, discussion</td></tr>
+                                    <tr><td class="p-2.5 font-bold text-slate-200">-ment</td><td class="p-2.5 text-slate-300">development, achievement</td></tr>
+                                    <tr><td class="p-2.5 font-bold text-slate-200">-ness</td><td class="p-2.5 text-slate-300">happiness, darkness</td></tr>
+                                    <tr><td class="p-2.5 font-bold text-slate-200">-ity</td><td class="p-2.5 text-slate-300">ability, responsibility</td></tr>
+                                    <tr><td class="p-2.5 font-bold text-slate-200">-ance / -ence</td><td class="p-2.5 text-slate-300">importance, performance, difference</td></tr>
+                                    <tr><td class="p-2.5 font-bold text-slate-200">-ship</td><td class="p-2.5 text-slate-300">friendship, leadership</td></tr>
+                                    <tr><td class="p-2.5 font-bold text-amber-400">-er / -or</td><td class="p-2.5 text-amber-400 font-medium">teacher, worker, actor, doctor</td></tr>
+                                    <tr><td class="p-2.5 font-bold text-slate-200">-ist / -ee / -hood</td><td class="p-2.5 text-slate-300">artist, employee, refugee, childhood</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Phần 2 -->
+                    <div class="mb-8">
+                        <h3 class="text-sm sm:text-base font-bold text-amber-400 border-l-4 border-amber-400 pl-2 mb-3 uppercase tracking-wide">PHẦN 2. DANH TỪ ĐẾM ĐƯỢC VÀ KHÔNG ĐẾM ĐƯỢC</h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="bg-slate-800/40 p-4 rounded-xl border border-slate-700/50">
+                                <h4 class="text-xs sm:text-sm font-bold text-emerald-400 mb-2"><i class="fa-solid fa-circle-check mr-1"></i> Danh từ đếm được (Countable)</h4>
+                                <p class="text-xs text-slate-300 mb-2">Đếm trực tiếp bằng số đếm:</p>
+                                <ul class="text-xs text-slate-400 space-y-1 list-disc list-inside">
+                                    <li>Số ít đi kèm mạo từ: <span class="text-slate-200">a book, a student</span></li>
+                                    <li>Số nhiều thêm hậu tố: <span class="text-slate-200">books, students</span></li>
+                                    <li>Đi với từ hạn định: <span class="text-slate-200">many, a few, several, these</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-slate-800/40 p-4 rounded-xl border border-slate-700/50">
+                                <h4 class="text-xs sm:text-sm font-bold text-cyan-400 mb-2"><i class="fa-solid fa-circle-xmark mr-1"></i> Danh từ không đếm được (Uncountable)</h4>
+                                <p class="text-xs text-slate-300 mb-1">Không dùng trực tiếp với số đếm.</p>
+                                <p class="text-[11px] text-amber-400 mb-2 font-medium">Một số từ thường gặp: <span class="underline">information</span>, <span class="underline">advice</span>, <span class="underline">news</span>, <span class="underline">luggage</span>, <span class="underline">equipment</span>, <span class="underline">money</span>, <span class="underline">knowledge</span>.</p>
+                                <ul class="text-xs text-slate-400 space-y-1 list-disc list-inside">
+                                    <li>Đi cùng với từ lượng: <span class="text-slate-200">much, little, a little, some</span></li>
+                                    <li class="text-red-400 font-semibold">Cấm dùng: ❌ an information, ❌ advices</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phần 3 (Đã sửa đổi thêm dấu ... và dòng chữ nhỏ) -->
+                    <div class="mb-8">
+                        <h3 class="text-sm sm:text-base font-bold text-amber-400 border-l-4 border-amber-400 pl-2 mb-3 uppercase tracking-wide">PHẦN 3. BẢNG BIẾN ĐỔI SỐ ÍT & SỐ NHIỀU</h3>
+                        <div class="overflow-x-auto bg-slate-800/50 rounded-xl border border-slate-700/60 mb-2">
+                            <table class="w-full text-left text-xs text-slate-300 min-w-[450px]">
+                                <thead class="bg-slate-800 text-white text-[11px] uppercase tracking-wider">
+                                    <tr class="border-b border-slate-700"><th class="p-2.5">Quy tắc biến đổi</th><th class="p-2.5">Dạng Số ít</th><th class="p-2.5">Dạng Số nhiều</th></tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-700/40">
+                                    <tr><td class="p-2.5 font-medium">1. Thêm -s mặc định</td><td class="p-2.5 text-slate-400">book, car</td><td class="p-2.5 text-emerald-400">books, cars</td></tr>
+                                    <tr><td class="p-2.5 font-medium">2. Tận cùng s, ss, sh, ch, x, z (+es)</td><td class="p-2.5 text-slate-400">bus, box, watch</td><td class="p-2.5 text-emerald-400">buses, boxes, watches</td></tr>
+                                    <tr><td class="p-2.5 font-medium">3. Phụ âm + y (đổi thành -ies)</td><td class="p-2.5 text-slate-400">city, country</td><td class="p-2.5 text-emerald-400">cities, countries</td></tr>
+                                    <tr><td class="p-2.5 font-medium">4. Tận cùng f / fe (đổi thành -ves)</td><td class="p-2.5 text-slate-400">knife, leaf</td><td class="p-2.5 text-emerald-400">knives, leaves</td></tr>
+                                    <tr><td class="p-2.5 font-bold text-amber-400">5. Nhóm bất quy tắc (Học thuộc)</td><td class="p-2.5 text-slate-400">child, person, man, ...</td><td class="p-2.5 text-amber-400 font-bold">children, people, men, ...</td></tr>
+                                    <tr><td class="p-2.5 font-medium">6. Giữ nguyên dạng thức</td><td class="p-2.5 text-slate-400">sheep, fish, deer, ...</td><td class="p-2.5 text-slate-300">sheep, fish, deer, ...</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="text-[11px] text-slate-400 italic font-medium"><i class="fa-solid fa-circle-info mr-1"></i> * Một số trường hợp đặc biệt học sinh tự tìm hiểu thêm.</p>
+                    </div>
+
+                    <!-- Phần 4 (Gộp từ 4 & 5 cũ thành Phần 4) -->
+                    <div class="mb-8">
+                        <h3 class="text-sm sm:text-base font-bold text-amber-400 border-l-4 border-amber-400 pl-2 mb-3 uppercase tracking-wide">PHẦN 4. QUY TẮC SỬ DỤNG MẠO TỪ (ARTICLES)</h3>
+                        <div class="space-y-3 text-xs text-slate-300 pl-2">
+                            <p>• <strong class="text-slate-100 text-sm">Mạo từ "A":</strong> Đứng trước danh từ đếm được số ít, phát âm bắt đầu bằng một phụ âm (Ví dụ: <em>a book, a doctor</em>). <br><span class="text-amber-500 font-semibold">⚠️ Lưu ý: a university, a European country (Do phát âm bắt đầu bằng /juː/).</span></p>
+                            <p>• <strong class="text-slate-100 text-sm">Mạo từ "An":</strong> Đứng trước danh từ đếm được số ít, phát âm bắt đầu bằng một nguyên âm u, e, o, a, i (Ví dụ: <em>an apple, an umbrella</em>). <br><span class="text-amber-500 font-semibold">⚠️ Trường hợp đặc biệt: an hour, an honest man (Vì phụ âm "h" câm).</span></p>
+                            <p>• <strong class="text-slate-100 text-sm">Mạo từ "The":</strong> Dùng khi đối tượng đã được xác định cụ thể trong ngữ cảnh. Đứng trước vật thể duy nhất (<em>the sun, the world</em>), tên sông, biển, đại dương, nhạc cụ (<em>play the piano</em>).</p>
+                            <p>• <strong class="text-red-400 text-sm">Không dùng mạo từ (Zero Article):</strong> Tuyệt đối không dùng trước tên quốc gia/thành phố thông thường (<em>Hanoi, Vietnam</em>), môn học (<em>English</em>), bữa ăn, các môn thể thao.</p>
+                        </div>
+                    </div>
+
+                    <!-- Phần 5 (Sửa từ phần 6 cũ và lược bỏ chữ trong đề HSA) -->
+                    <div class="bg-red-950/40 border border-red-900 rounded-2xl p-4">
+                        <h3 class="text-red-400 text-sm sm:text-base font-bold mb-3 uppercase tracking-wide"><i class="fa-solid fa-triangle-exclamation mr-1"></i> PHẦN 5. BẪY LỖI SAI THƯỜNG GẶP</h3>
+                        <div class="overflow-x-auto bg-slate-900/90 rounded-xl border border-red-900/40">
+                            <table class="w-full text-left text-xs">
+                                <thead class="bg-red-950/60 text-[11px] uppercase text-red-300">
+                                    <tr class="border-b border-red-900/30"><th class="p-2.5">Lỗi Sai Hoàn Toàn (❌)</th><th class="p-2.5">Sửa Đúng Ngữ Pháp (✅)</th></tr>
+                                </thead>
+                                <tbody class="divide-y divide-red-950/20 text-slate-300">
+                                    <tr><td class="p-2.5 text-red-400 font-medium">an university / a hour</td><td class="p-2.5 text-emerald-400 font-bold">a university / an hour</td></tr>
+                                    <tr><td class="p-2.5 text-red-400 font-medium">many informations / advices</td><td class="p-2.5 text-emerald-400 font-bold">much information / some advice</td></tr>
+                                    <tr><td class="p-2.5 text-red-400 font-medium">childrens / peoples</td><td class="p-2.5 text-emerald-400 font-bold">children / people</td></tr>
+                                    <tr><td class="p-2.5 text-red-400 font-medium">many money</td><td class="p-2.5 text-emerald-400 font-bold">much money</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 text-xs py-6 border-t border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 text-center space-y-2">
+            <p class="font-bold text-slate-300">© 2026 Hệ Thống Học Tập Luyện Thi HSA - Thầy Hòa & Trung Tâm Gia Sư Giỏi Nghệ An</p>
+            <p>Hệ thống học tập phân hóa chất lượng cao, đồng hành bứt phá điểm số Đánh giá năng lực.</p>
+        </div>
+    </footer>
+
+    <script>
+        function showLessonDetail(lessonId, lessonTitle) {
+            const resourceBox = document.getElementById('dynamic-resource-box');
+            const boxTitle = document.getElementById('detail-box-title');
+            const notebookArea = document.getElementById('notebook-content-area');
+            
+            boxTitle.innerHTML = `Buổi ${lessonId}: ${lessonTitle}`;
+            resourceBox.classList.remove('hidden');
+            notebookArea.classList.add('hidden');
+            
+            resourceBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function closeResourceBox() {
+            document.getElementById('dynamic-resource-box').classList.add('hidden');
+        }
+
+        function toggleNotebook() {
+            const notebookArea = document.getElementById('notebook-content-area');
+            notebookArea.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
