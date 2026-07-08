@@ -333,6 +333,35 @@
             
             resourceBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
+<script>
+        function showLessonDetail(lessonId, lessonTitle) {
+            const resourceBox = document.getElementById('dynamic-resource-box');
+            const boxTitle = document.getElementById('detail-box-title');
+            const notebookArea = document.getElementById('notebook-content-area');
+            const notebookTag = document.getElementById('notebook-tag');
+            
+            boxTitle.innerHTML = `Buổi ${lessonId}: ${lessonTitle}`;
+            notebookTag.innerHTML = `Chuyên đề: ${lessonTitle}`;
+            
+            // --- NHÓM NỀN TẢNG (Trỏ thẳng vào file index.html của từng folder) ---
+            document.getElementById('link-flashcard').href = `./Buoi-${lessonId}/nen-tang/index.html?type=flashcard`;
+            document.getElementById('link-nentang').href = `./Buoi-${lessonId}/nen-tang/index.html?type=nentang`;
+            document.getElementById('link-danhgia').href = `./Buoi-${lessonId}/nen-tang/index.html?type=danhgia`;
+            
+            // --- NHÓM NÂNG CAO (Trỏ thẳng vào file index.html của từng folder) ---
+            document.getElementById('link-nangcao').href = `./Buoi-${lessonId}/nang-cao/index.html?type=nangcao`;
+            document.getElementById('link-vandung').href = `./Buoi-${lessonId}/nang-cao/index.html?type=vandung`;
+            document.getElementById('link-hsa').href = `./Buoi-${lessonId}/nang-cao/index.html?type=hsa`;
+            document.getElementById('link-butpha').href = `./Buoi-${lessonId}/nang-cao/index.html?type=butpha`;
+            
+            // --- BÀI TẬP VỀ NHÀ ---
+            document.getElementById('link-homework').href = `./Buoi-${lessonId}/bai-tap-ve-nha/index.html`;
+
+            resourceBox.classList.remove('hidden');
+            notebookArea.classList.add('hidden');
+            
+            resourceBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
 
         function closeResourceBox() {
             document.getElementById('dynamic-resource-box').classList.add('hidden');
