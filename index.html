@@ -313,27 +313,24 @@
             const notebookArea = document.getElementById('notebook-content-area');
             const notebookTag = document.getElementById('notebook-tag');
             
-            // Cập nhật tiêu đề vùng tài liệu học tập
             boxTitle.innerHTML = `Buổi ${lessonId}: ${lessonTitle}`;
             notebookTag.innerHTML = `Chuyên đề: ${lessonTitle}`;
             
-            // Tự động gán link động cho các bài tập theo Buổi tương ứng (1-7)
-            document.getElementById('link-flashcard').href = `./Buoi-${lessonId}/Bai-Tap/flashcard.html`;
-            document.getElementById('link-nentang').href = `./Buoi-${lessonId}/Bai-Tap/nentang.html`;
-            document.getElementById('link-danhgia').href = `./Buoi-${lessonId}/Bai-Tap/danhgia.html`;
-            document.getElementById('link-nangcao').href = `./Buoi-${lessonId}/Bai-Tap/nangcao.html`;
-            document.getElementById('link-vandung').href = `./Buoi-${lessonId}/Bai-Tap/vandung.html`;
-            document.getElementById('link-hsa').href = `./Buoi-${lessonId}/Bai-Tap/hsa.html`;
-            document.getElementById('link-butpha').href = `./Buoi-${lessonId}/Bai-Tap/butpha.html`;
+            // Đã sửa đường dẫn từ viết Hoa thành viết thường toàn bộ trùng khớp 100% với folder máy tính của thầy
+            document.getElementById('link-flashcard').href = `./Buoi-${lessonId}/nen-tang/index.html`;
+            document.getElementById('link-nentang').href = `./Buoi-${lessonId}/nen-tang/index.html`;
+            document.getElementById('link-danhgia').href = `./Buoi-${lessonId}/nen-tang/index.html`;
             
-            // Tự động điều hướng đến file baitapvenha.html của bạn
-            document.getElementById('link-homework').href = `./Buoi-${lessonId}/Bai-Tap/baitapvenha.html`;
+            document.getElementById('link-nangcao').href = `./Buoi-${lessonId}/nang-cao/index.html`;
+            document.getElementById('link-vandung').href = `./Buoi-${lessonId}/nang-cao/index.html`;
+            document.getElementById('link-hsa').href = `./Buoi-${lessonId}/nang-cao/index.html`;
+            document.getElementById('link-butpha').href = `./Buoi-${lessonId}/nang-cao/index.html`;
+            
+            document.getElementById('link-homework').href = `./Buoi-${lessonId}/bai-tap-ve-nha/index.html`;
 
-            // Mở hộp tài liệu ra và luôn ẩn hộp lý thuyết đi để học sinh tự mở khi cần
             resourceBox.classList.remove('hidden');
             notebookArea.classList.add('hidden');
             
-            // Cuộn mượt màn hình xuống hộp tài liệu
             resourceBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
 
