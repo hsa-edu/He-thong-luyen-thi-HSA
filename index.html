@@ -317,16 +317,16 @@
             boxTitle.innerHTML = `Buổi ${lessonId}: ${lessonTitle}`;
             notebookTag.innerHTML = `Chuyên đề: ${lessonTitle}`;
             
-            // --- NHÓM NỀN TẢNG (Trỏ thẳng vào file index.html của từng folder và gán tham số phân biệt) ---
-            document.getElementById('link-flashcard').href = `./Buoi-${lessonId}/nen-tang/index.html?type=flashcard`;
-            document.getElementById('link-nentang').href = `./Buoi-${lessonId}/nen-tang/index.html?type=nentang`;
-            document.getElementById('link-danhgia').href = `./Buoi-${lessonId}/nen-tang/index.html?type=danhgia`;
+            // --- NHÓM NỀN TẢNG (Khớp chính xác với ảnh số 4) ---
+            document.getElementById('link-flashcard').href = `./Buoi-${lessonId}/nen-tang/flashcard-ghi-nho-nhanh/index.html`;
+            document.getElementById('link-nentang').href = `./Buoi-${lessonId}/nen-tang/luyen-tap-nen-tang/index.html`;
+            document.getElementById('link-danhgia').href = `./Buoi-${lessonId}/nen-tang/danh-gia-nhanh/index.html`;
             
-            // --- NHÓM NÂNG CAO (Trỏ thẳng vào file index.html của từng folder và gán tham số phân biệt) ---
-            document.getElementById('link-nangcao').href = `./Buoi-${lessonId}/nang-cao/index.html?type=nangcao`;
-            document.getElementById('link-vandung').href = `./Buoi-${lessonId}/nang-cao/index.html?type=vandung`;
-            document.getElementById('link-hsa').href = `./Buoi-${lessonId}/nang-cao/index.html?type=hsa`;
-            document.getElementById('link-butpha').href = `./Buoi-${lessonId}/nang-cao/index.html?type=butpha`;
+            // --- NHÓM NÂNG CAO (Khớp chính xác với ảnh mới gửi - Lưu ý chữ HSA viết hoa) ---
+            document.getElementById('link-nangcao').href = `./Buoi-${lessonId}/nang-cao/luyen-tap-nang-cao/index.html`;
+            document.getElementById('link-vandung').href = `./Buoi-${lessonId}/nang-cao/van-dung-thuc-te/index.html`;
+            document.getElementById('link-hsa').href = `./Buoi-${lessonId}/nang-cao/dang-bai-HSA/index.html`;
+            document.getElementById('link-butpha').href = `./Buoi-${lessonId}/nang-cao/but-pha-diem-so/index.html`;
             
             // --- BÀI TẬP VỀ NHÀ ---
             document.getElementById('link-homework').href = `./Buoi-${lessonId}/bai-tap-ve-nha/index.html`;
