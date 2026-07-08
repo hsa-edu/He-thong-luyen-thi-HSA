@@ -340,6 +340,7 @@
             const notebookArea = document.getElementById('notebook-content-area');
             const notebookTag = document.getElementById('notebook-tag');
             
+            // Cập nhật tiêu đề vùng tài liệu học tập
             boxTitle.innerHTML = `Buổi ${lessonId}: ${lessonTitle}`;
             notebookTag.innerHTML = `Chuyên đề: ${lessonTitle}`;
             
@@ -357,9 +358,11 @@
             // --- BÀI TẬP VỀ NHÀ ---
             document.getElementById('link-homework').href = `./Buoi-${lessonId}/bai-tap-ve-nha/index.html`;
 
+            // Mở hộp tài liệu ra và ẩn hộp lý thuyết đi
             resourceBox.classList.remove('hidden');
             notebookArea.classList.add('hidden');
             
+            // Cuộn mượt màn hình xuống hộp tài liệu
             resourceBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
 
